@@ -1,0 +1,9 @@
+const interactions = new InteractionManager();
+interactions.connect( renderer, camera );
+// Objects live anywhere in the scene graph
+scene.add( mesh );
+// Register for interaction separately
+interactions.add( mesh );
+// In the animation loop
+interactions.update();
+
